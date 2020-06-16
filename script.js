@@ -23,7 +23,7 @@ color2.addEventListener("input", setGradient);
 
 function randomColor() {
 	var rcRaw = Math.floor(Math.random() * 16777215).toString(16);
-	var rc = ("000000" + rcRaw).slice(-6);
+	var rc = ("000000" + rcRaw).slice(-6).toString(16);
 	console.log(rc);
 	return ("#" + rc);
 }
