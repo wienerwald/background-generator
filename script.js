@@ -22,8 +22,9 @@ color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
 
 function randomColor() {
-	var rc = Math.floor(Math.random()*16777215).toString(16)
-	return("#" + rc)
+	var rcRaw = Math.floor(Math.random() * 16777215).toString(16);
+	var rc = ("000000" + rcRaw).slice(-6);
+	return ("#" + rc);
 }
 
 function randomBg() {
@@ -36,25 +37,11 @@ function randomBg() {
 		+ rc2
 		+ ")";
 
-		color1.value = rc1;
-		color2.value = rc2;
-		console.log(color1.value);
-		console.log(color2.value);
+	color1.value = rc1;
+	color2.value = rc2;
+	console.log("color1" + color1.value);
+	console.log("color2" + color2.value);
 	css.textContent = body.style.background + ";";
 }
 
 generate.addEventListener("click", randomBg);
-
-
-// Random color generator rgb-ben:
-
-// function randomColor() {
-// 	return (
-// 		"rgb("
-// 			+ Math.random() * 255
-// 			+ ", "
-// 			+ Math.random() * 255
-// 			+ ", "
-// 			+ Math.random() * 255
-// 			+ ")");
-// }
