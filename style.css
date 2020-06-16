@@ -1,0 +1,60 @@
+body {
+    font: 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    background: linear-gradient(to right, #ff0000, #00ff00);
+    /* Standard syntax */
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h3 {
+    font: 900 1em 'Raleway', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+#generate {
+    background-color: rgba(0, 0, 0, .5);
+    border: none;
+    color: rgb(207, 207, 207);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: black 2px 2px 1px;
+    outline: none;
+}
+
+#generate:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: rgb(173, 173, 173);
+}
+
+#generate:active {
+    background-color: rgba(0, 0, 0, 0.801);
+    color: rgb(173, 173, 173);
+    box-shadow: none;
+    transform: translate(2px,2px);
+}
+
+#generate:visited {
+    background-color: rgba(0, 0, 0, .5);
+    color: rgb(207, 207, 207);
+    box-shadow: black 2px 2px 1px;
+    outline: none;
+}
