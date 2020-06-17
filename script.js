@@ -24,7 +24,6 @@ color2.addEventListener("input", setGradient);
 function randomColor() {
 	var rcRaw = Math.floor(Math.random() * 16777215).toString(16);
 	var rc = ("000000" + rcRaw).slice(-6).toString(16);
-	console.log(rc);
 	return ("#" + rc);
 }
 
@@ -40,9 +39,18 @@ function randomBg() {
 
 	color1.value = rc1;
 	color2.value = rc2;
-	console.log("color1" + color1.value);
-	console.log("color2" + color2.value);
 	css.textContent = body.style.background + ";";
 }
 
 generate.addEventListener("click", randomBg);
+
+// write to clipboard
+function copy() {
+	var copyText = document.querySelector("#report");
+	var range = document.createRange();
+	range.selectNode(copyText);
+	window.getSelection().addRange(range);
+	document.execCommand("copy");
+  }
+  
+  document.querySelector("#copy").addEventListener("click", copy);

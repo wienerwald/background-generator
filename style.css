@@ -26,7 +26,7 @@ h3 {
     letter-spacing: 0.01em;
 }
 
-#generate {
+.btn {
     background-color: rgba(0, 0, 0, .5);
     border: none;
     color: rgb(207, 207, 207);
@@ -39,22 +39,31 @@ h3 {
     outline: none;
 }
 
-#generate:hover {
+.btn:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.801);
     color: rgb(173, 173, 173);
 }
 
-#generate:active {
+.btn:active {
     background-color: rgba(0, 0, 0, 0.801);
     color: rgb(173, 173, 173);
     box-shadow: none;
     transform: translate(2px,2px);
 }
 
-#generate:visited {
+.btn:visited {
     background-color: rgba(0, 0, 0, .5);
     color: rgb(207, 207, 207);
     box-shadow: black 2px 2px 1px;
     outline: none;
+}
+
+#report {
+    background-color: rgba(255, 251, 251, 0.5);
+    border: rgba(0, 0, 0, .5) 1px solid;
+    padding: 5px;
+    display: inline;
+    font-family: monospace;
+    font-size: 14px;
 }
